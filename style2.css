@@ -4,6 +4,10 @@
 body {
   width: 900px;
   margin: 10px auto;
+  font-family: "Oswald";
+  font-size: 14px;
+  background-image: url(https://tranquilitycremation.com/wp-content/uploads/2016/06/Clouds-Sea-Ocean-Sky-Sunrise-Sunset-Orange-Color-1920x2560.jpg);
+
 }
 
 nav {
@@ -12,6 +16,12 @@ nav {
 }
 
 /* Use the 'Bungee Inline' font at 46px and lighter weight for the restaurant name. */
+
+
+h1 { font-family: "Bungee Inline";
+font-size: 46px;
+font-weight:lighter;
+}
 
 main {
   columns: 420px 2;
@@ -25,11 +35,15 @@ section {
 /* Show each of the section headings of the menu (e.g. "Starters") in uppercase. */
 h2 {
   margin-top: 0;
+  text-transform:uppercase;
 }
 
 /* Make the name of each menu item appear in bold in a 16px size. */
 dt {
   display: inline;
+  font-size: 16px;
+  font-weight:bold;
+
 }
 /* Make a comma appear after the name of each menu item (before the description) */
 
@@ -37,6 +51,8 @@ dd {
   display: inline;
   margin: 0;
 }
+
+dt::after {content:","}
 
 dd::after {
   content: " ";
@@ -49,6 +65,13 @@ dd::after {
   float: right;
   padding: 0 0 35px 20px;
 }
+
+section#starters { border: 2px solid black;
+}
+
+section#desserts {border: 2px solid black;}
+
+footer {text-align:right;}
 
 /* Right-align the text of the address/footer */
 
